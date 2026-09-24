@@ -1,5 +1,9 @@
-<link rel="stylesheet" href="https://raw.githubusercontent.com/pizzasdu83/sc/refs/heads/main/bg.css">
-
+<head>
+	<meta charset="UTF-8">
+	<title>simple cookie</title>
+	<link rel="stylesheet" href="https://raw.githubusercontent.com/pizzasdu83/sc/refs/heads/main/bg.css">
+</head>
+<body>
 	<input type="image" src="https://raw.githubusercontent.com/pizzasdu83/petwaitlist/refs/heads/main/gcookie.png" id="cookie-manager-btn" onclick="openPopup()" width="60" height="60">
 	<div id="cookie-popup">
 		<h2>cookies gestion</h2>
@@ -10,7 +14,6 @@
 			<h3>Market</h3>
 			<button class="store-btn" onclick="buyUpgrade('click')">+1 per clic<br>(10 cookies)</button><button class="store-btn" onclick="buyUpgrade('auto')">Auto-click<br>(30 cookies)</button>
 		</div>
-
 		<div id="color-menu" style="margin-top:15px; display:none;">
 			<h3>🎨 Choose your background</h3>
 				<label>
@@ -35,15 +38,13 @@
 				<label>
 					<input type="radio" name="bgmode" value="fallin" checked onchange="setBackgroundMode(this.value)">Boykisser
 				</label><br>
-			
 				<button class="clrInterval" onclick="clearInterval(fallin);" enabled>stop boykissing</button>
-				
 		</div>
-
 		<div id="choices" style="margin-top:15px;">
 			<button class="accept-btn" onclick="acceptCookies()" enabled>Accept</button>
 			<button class="refuse-btn" onclick="refuseCookies()" disabled>Deny</button>
 		</div>
 	</div>
-	
 	<script src="https://raw.githubusercontent.com/pizzasdu83/sc/refs/heads/main/bg.js"></script>
+</body>
+</html>
